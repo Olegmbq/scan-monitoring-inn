@@ -1,0 +1,163 @@
+.documents {
+  margin-top: 56px;
+}
+
+.documents__title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.documents__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.documents__more {
+  display: block;
+  margin: 32px auto 0;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 8px;
+  background: #5970ff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.document-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.document-card__meta {
+  display: flex;
+  gap: 12px;
+  font-size: 14px;
+  color: #777;
+}
+
+.document-card__source {
+  color: #5970ff;
+  text-decoration: none;
+}
+
+.document-card__title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.document-card__badge {
+  display: inline-block;
+  align-self: flex-start;
+  background: #ffb64f;
+  color: #000;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.document-card__text {
+  font-size: 14px;
+  color: #444;
+}
+
+.document-card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.document-card__read {
+  background: #0aa6a6;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.document-card__words {
+  font-size: 14px;
+  color: #777;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  .documents__list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== Skeleton ===== */
+
+.skeleton {
+  pointer-events: none;
+}
+
+.skeleton__line,
+.skeleton__badge,
+.skeleton__button,
+.skeleton__words {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 37%, #f0f0f0 63%);
+  background-size: 400% 100%;
+  animation: skeleton-loading 1.4s ease infinite;
+  border-radius: 6px;
+}
+
+.skeleton__meta {
+  height: 14px;
+  width: 60%;
+}
+
+.skeleton__title {
+  height: 20px;
+  width: 100%;
+}
+
+.skeleton__text {
+  height: 14px;
+  width: 100%;
+}
+
+.skeleton__text.short {
+  width: 70%;
+}
+
+.skeleton__badge {
+  height: 18px;
+  width: 120px;
+}
+
+.skeleton__footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.skeleton__button {
+  height: 32px;
+  width: 160px;
+  border-radius: 6px;
+}
+
+.skeleton__words {
+  height: 14px;
+  width: 80px;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}

@@ -1,0 +1,707 @@
+.home {
+  padding-top: 120px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 93px; // высота как в макете
+  background: #fff;
+  border-bottom: 1px solid #ececec;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+/* -------- HERO -------- */
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 160px; // как в макете
+}
+
+/* Левая колонка */
+.hero__left {
+  width: 743px;
+}
+
+/* Заголовок */
+.hero__title {
+  font-family: "Ferry";
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 60px; // 100%
+  letter-spacing: 0.01em;
+  margin: 0; // важно!
+}
+
+/* Подзаголовок */
+.hero__subtitle {
+  margin-top: 30px; // ТОЧНО по макету
+  font-family: "Inter";
+  font-size: 20px;
+  line-height: 24px;
+  width: 534px;
+}
+
+/* Кнопка */
+.hero__button {
+  margin-top: 40px; // ТОЧНО по макету
+  width: 335px;
+  height: 59px;
+
+  background: #5970ff;
+  border: none;
+  border-radius: 5px;
+
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.hero__button:hover {
+  background: #4a5df0;
+}
+
+.hero__button:active {
+  transform: scale(0.98);
+}
+
+/* Правая колонка */
+.hero__right {
+  width: 629px;
+  height: 620px;
+}
+
+.hero__img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* -------- WHY -------- */
+
+.why {
+  margin-top: 100px; // важно — не меньше
+}
+
+.section-title {
+  font-family: "Ferry";
+  font-weight: 900;
+  font-size: 45px;
+  line-height: 45px;
+  letter-spacing: 0.01em;
+  margin: 0;
+}
+
+/* Карточки */
+.why__cards {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* Одна карточка */
+.why-card {
+  width: 400px;
+  height: 225px;
+
+  padding: 30px;
+
+  background: #ffffff;
+  border-radius: 10px;
+
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Иконка */
+.why-card__icon {
+  width: 40px;
+  height: 40px;
+}
+
+/* Текст */
+.why-card__text {
+  margin-top: 20px;
+
+  font-family: "Inter";
+  font-size: 18px;
+  line-height: 22px;
+}
+
+/* Иллюстрация снизу */
+.why__illustration {
+  display: block;
+  margin: 60px auto 0 auto;
+  width: 1307px;
+  max-width: 100%;
+}
+
+/* -------- TARIF -------- */
+
+.tariffs {
+  margin-top: 100px;
+}
+
+.tariffs__list {
+  margin-top: 40px;
+  display: flex;
+  gap: 30px;
+}
+
+/* Карточка */
+.tariff-card {
+  width: 415px;
+  min-height: 540px;
+
+  background: #ffffff;
+  border-radius: 10px;
+
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.tariff-card__icon {
+  width: 96px;
+  align-self: flex-start;
+  margin-top: 0; // ← ПОДНИМАЕМ ИКОНКУ
+}
+
+/* HEADER */
+.tariff-card__header {
+  height: 132px; // ← фиксированная высота из Figma
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; // ← важно
+  position: relative;
+}
+.tariff-card__header > div {
+  max-width: 240px;
+}
+.tariff-card__header h3 {
+  margin: 0;
+  font-size: 30px;
+  line-height: 1.1;
+}
+
+.tariff-card__header p {
+  margin-top: 6px;
+  font-size: 18px;
+  line-height: 1.1;
+}
+
+.tariff-card__title {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 30px;
+  margin: 0;
+}
+
+.tariff-card__subtitle {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+/* Фоны */
+.tariff-card--beginner .tariff-card__header {
+  background: #ffb64f;
+}
+
+.tariff-card--pro .tariff-card__header {
+  background: #7ce3e1;
+}
+
+.tariff-card--business .tariff-card__header {
+  background: #000;
+  color: #fff;
+}
+
+/* Иконка */
+.tariff-card__icon {
+  align-self: flex-start;
+}
+
+/* Бейдж */
+.tariff-card__badge {
+  position: absolute;
+  right: 30px;
+  bottom: -15px;
+
+  background: #3ba5e0;
+  color: #ffffff;
+
+  font-size: 14px;
+  padding: 4px 12px;
+  border-radius: 10px;
+}
+
+/* BODY */
+.tariff-card__body {
+  padding: 30px;
+  flex: 1;
+}
+
+/* Цена */
+.price {
+  display: flex;
+  gap: 15px;
+  align-items: flex-end;
+}
+
+.price .current {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.price .old {
+  font-size: 25px;
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.installment {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* Список */
+.included p {
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+.included ul {
+  margin-top: 10px;
+  padding-left: 18px;
+}
+
+.included li {
+  margin-bottom: 8px;
+}
+
+/* Кнопки */
+.tariff-card__button {
+  height: 59px;
+  margin: 0 30px 30px;
+
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.tariff-card__button.blue {
+  background: #5970ff;
+  border: none;
+  color: #fff;
+}
+
+.tariff-card__button.outline {
+  background: transparent;
+  border: 1px solid #5970ff;
+  color: #5970ff;
+}
+.tariffs {
+  margin-top: 100px;
+  margin-bottom: 120px; // ← ВАЖНО
+}
+.tariff-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+  }
+}
+.tariff-card__button {
+  margin-top: auto; // ← ВАЖНО
+  height: 59px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+.tariff-card__badge--hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .hero__right {
+    display: block; // ← ВАЖНО
+  }
+}
+
+.hero__right img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding-top: 40px;
+  }
+
+  .hero__right {
+    margin-top: 30px;
+  }
+}
+
+.tariff-card {
+  width: 100%;
+}
+
+.tariff-card__button {
+  width: calc(100% - 60px);
+}
+
+.tariff-card {
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.tariff-card:hover {
+  transform: translateY(-4px);
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+  .tariffs__list {
+    display: flex;
+    flex-direction: column; // 🔥 ВОТ ЭТО ГЛАВНОЕ
+    gap: 20px;
+    overflow: visible; // ❌ никаких скроллов
+  }
+
+  .tariff-card {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding-top: 40px;
+  }
+
+  .hero__left {
+    width: 100%;
+  }
+
+  .hero__title {
+    font-size: 28px;
+    line-height: 32px;
+    width: 100%;
+  }
+
+  .hero__subtitle {
+    font-size: 18px;
+    width: 100%;
+  }
+
+  .hero__button {
+    width: 100%;
+    height: 59px;
+  }
+
+  .hero__right {
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  .hero__img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .why__cards {
+    display: flex;
+    overflow-x: auto;
+    gap: 16px;
+    padding-bottom: 16px;
+  }
+
+  .why-card {
+    min-width: 260px;
+    flex-shrink: 0;
+  }
+
+  .why__illustration {
+    width: 100%;
+    margin-top: 40px;
+  }
+}
+
+/* WHY */
+
+.why {
+  margin-top: 100px;
+  position: relative;
+}
+
+.why__cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.why-card {
+  width: 400px;
+  height: 225px;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.why-card img {
+  width: 40px;
+  height: 40px;
+}
+
+.why-card p {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.why__illustration {
+  display: block;
+  margin: 60px auto 0;
+  width: 1300px;
+}
+/* ================= WHY MOBILE ================= */
+@media (max-width: 768px) {
+  .why {
+    margin-top: 80px;
+  }
+
+  .why__cards {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    padding-bottom: 16px;
+
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .why-card {
+    min-width: 260px;
+    flex-shrink: 0;
+
+    scroll-snap-align: start;
+  }
+
+  /* убираем горизонтальный скролл-бар */
+  .why__cards::-webkit-scrollbar {
+    display: none;
+  }
+
+  .why__illustration {
+    width: 100%;
+    margin-top: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .why-card {
+    min-width: 260px; // 🔥 КЛЮЧЕВО
+    max-width: 280px; // 🔥
+    height: auto;
+    padding: 20px; // было 30 — уменьшаем
+  }
+}
+@media (max-width: 768px) {
+  .why-card__text {
+    font-size: 14px; // ❗ было 18 — это слишком
+    line-height: 18px; // ❗ Figma mobile
+    letter-spacing: 0;
+    white-space: normal;
+    word-break: break-word;
+  }
+}
+@media (max-width: 768px) {
+  .why-card__icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+@media (max-width: 768px) {
+  .why__cards {
+    display: flex;
+    gap: 16px;
+
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+
+    padding-bottom: 16px;
+  }
+
+  .why__cards::-webkit-scrollbar {
+    display: none; // 🔥 убираем скроллбар
+  }
+}
+@media (max-width: 768px) {
+  .why-card {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+
+    min-width: 260px;
+    max-width: 280px;
+  }
+}
+/* ================= MOBILE FIX ================= */
+@media (max-width: 768px) {
+  .hero__right,
+  .hero__subtitle,
+  .why-card,
+  .why__illustration {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero__left,
+  .hero__right {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 40px;
+  }
+
+  .hero__title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .hero__subtitle {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .hero__img {
+    max-height: 280px;
+    object-fit: contain;
+  }
+}
+@media (max-width: 768px) {
+  .why-card p,
+  .why-card__text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+/* ================= FORCE MOBILE — FIGMA LIKE ================= */
+@media (max-width: 768px) {
+  .home {
+    padding-top: 90px;
+  }
+
+  .hero {
+    padding-top: 0;
+    flex-direction: column;
+  }
+
+  .hero__left,
+  .hero__right {
+    width: 100%;
+  }
+
+  .hero__title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .hero__subtitle {
+    width: 100%;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 12px;
+  }
+
+  .hero__button {
+    width: 100%;
+  }
+
+  .hero__img {
+    max-height: 240px;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 768px) {
+  .why {
+    margin-top: 1px; // 🔥 было 80–100, делаем компактнее
+  }
+
+  .tariff {
+    margin-top: 4px;
+  }
+}
+
+@media (max-width: 768px) {
+  .why__cards {
+    gap: 16px; // 🔥 компактнее
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero__button {
+    margin-bottom: 10px; // было больше — уменьшаем
+  }
+
+  .hero__image {
+    margin-top: 8px; // 🔥 сближаем с кнопкой
+    margin-bottom: 24px; // 🔥 меньше пустоты
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 28px; // 🔥 было ~45
+    line-height: 32px;
+    letter-spacing: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .why {
+    margin-top: 0px;
+  }
+}

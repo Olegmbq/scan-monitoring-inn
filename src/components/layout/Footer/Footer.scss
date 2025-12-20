@@ -1,0 +1,88 @@
+@import "../../../styles/variables.scss";
+
+/* ================= DESKTOP ================= */
+.footer {
+  width: 100%;
+  padding: 50px 60px; // ← ОТСТУПЫ КАК В FIGMA
+  background: $color-green;
+  color: white;
+
+  display: flex;
+  justify-content: space-between; // ⭐ ВАЖНЕЙШАЯ СТРОКА
+  align-items: flex-start;
+}
+
+.footer__info {
+  text-align: right; // 🔥 КЛЮЧ
+}
+
+.footer__logo {
+  .logo-desktop {
+    width: 140px;
+    display: block;
+  }
+
+  .logo-mobile {
+    display: none;
+  }
+}
+
+.footer__info {
+  text-align: right;
+
+  p {
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+
+  .footer__copy {
+    margin-top: 10px;
+    opacity: 0.7;
+  }
+}
+
+/* ================= MOBILE (FIGMA) ================= */
+@media (max-width: 768px) {
+  .footer {
+    padding: 20px 14px; // ← из Figma
+    display: flex;
+    flex-direction: row; // 🔥 КЛЮЧЕВО
+    align-items: flex-start;
+    gap: 10px; // расстояние между лого и текстом
+  }
+
+  .footer__logo {
+    margin-top: -39px;
+    // margin-bottom: 0; // ❗ убираем вертикальный сдвиг
+  }
+
+  .logo-desktop {
+    width: 96px;
+  }
+
+  .logo-mobile {
+    //display: block;
+    height: 32px;
+    width: auto; // как в Figma
+    //flex-shrink: 0; // ❗ чтобы не сжимался
+  }
+
+  .footer__info {
+    text-align: left;
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 6px;
+  }
+
+  .footer__copy {
+    margin-top: 8px;
+    font-size: 12px;
+    opacity: 0.8;
+  }
+}
+.footer__logo img {
+  width: auto !important;
+  height: auto !important;
+  max-width: none !important;
+  max-height: none !important;
+}
