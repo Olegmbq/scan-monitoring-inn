@@ -1,6 +1,9 @@
 # 🔍 🔥 SCAN Monitoring (B2B)
 
-🌐 **Live demo:**  
+🌐 **Live demo (Vercel):**  
+https://scan-monitoring-inn.vercel.app
+
+🌐 **Live demo (GitHub Pages):**  
 https://olegmbq.github.io/scan-monitoring-inn/
 
 ---
