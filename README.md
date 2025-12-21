@@ -71,23 +71,23 @@ Built with React and TypeScript, following clean architecture principles and pro
 
 ### Главная страница
 
-<img src="../screenshots/01-home.png" alt="Главная страница" />
+<img src="screenshots/01-home.png" alt="Главная страница" />
 
 ### Авторизация
 
-<img src="../screenshots/02-login.png" alt="Страница авторизации" />
+<img src="screenshots/02-login.png" alt="Страница авторизации" />
 
 ### Форма поиска
 
-<img src="../screenshots/03-search-form.png" alt="Форма поиска" />
+<img src="screenshots/03-search-form.png" alt="Форма поиска" />
 
 ### Результаты поиска
 
-<img src="../screenshots/04-results.png" alt="Результаты поиска" />
+<img src="screenshots/04-results.png" alt="Результаты поиска" />
 
 ### Мобильная версия
 
-<img src="../screenshots/05-mobile.png" alt="Мобильная версия" />
+<img src="screenshots/05-mobile.png" alt="Мобильная версия" />
 
 ---
 
