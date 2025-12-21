@@ -1,5 +1,10 @@
 # 🔍 🔥 SCAN Monitoring (B2B)
 
+🌐 **Live demo:**  
+https://olegmbq.github.io/scan-monitoring-inn/
+
+---
+
 <div align="center">
 
 <img src="./src/assets/brand/oleg-neuro-logo.png" width="260" style="border-radius: 18px; box-shadow: 0 0 20px rgba(173, 0, 255, 0.6), 0 0 40px rgba(0, 180, 255, 0.45);"  alt="Oleg & Neuro Logo" />
